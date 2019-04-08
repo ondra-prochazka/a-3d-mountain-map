@@ -69,10 +69,11 @@ and create some symlinks to the project's storage views and resource
 configuration files:
 
 ```
+    $ cd ~/git/a-3d-mountain-map-of-the-earth
     $ mkdir -p ~/store/a-3d-mountain-map
-    $ ln -s ./var_vts_store_a-3d-mountain-map_stylesheet ~/store/a-3d-mountain-map/stylesheet
-    $ ln -s ./var_vts_store_a-3d-mountain-map_map-config ~/store/a-3d-mountain-map/map-config
-    $ ln -s ./etc_vts_mapproxy_a-3d-mountain-map_d /etc/vts/mapproxy/a-3d-mountain-map.d
+    $ ln -s $PWD/var_vts_store_a-3d-mountain-map_stylesheet ~/store/a-3d-mountain-map/stylesheet
+    $ ln -s $PWD/var_vts_store_a-3d-mountain-map_map-config ~/store/a-3d-mountain-map/map-config
+    $ ln -s $PWD/etc_vts_mapproxy_a-3d-mountain-map_d /etc/vts/mapproxy/a-3d-mountain-map.d
 ```
 
 ### Setting up tileset storage

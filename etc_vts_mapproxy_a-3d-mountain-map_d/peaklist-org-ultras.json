@@ -1,0 +1,34 @@
+[{
+    "group": "a-3d-mountain-map",
+    "id": "peaklist-org-ultras",
+    "comment": "Ultra-prominent peaks on earth, compiled by peaklist.org",
+    "driver": "geodata-vector",
+    "type": "geodata",
+    "definition": {
+        "dataset": "world1500.json",
+        "displaySize": 2048,
+        "mode": "never",
+        "styleUrl": "file:peaklist-org-ultras.style",
+        "introspection": {
+            "surface": { "group": "topoearth", "id": "viewfinder6" }
+        },
+        "format": "geodataJson",
+        "formatConfig": { "resolution": 524288 },
+        "demDataset": "topoearth/topoearth-viewfinder6"
+    },
+    "referenceFrames": {
+        "melown2015": {
+            "lodRange": [1,1],
+            "tileRange": [[0,0], [1,1]]
+        }
+    },
+    "registry": {
+        "credits": {
+            "peaklist-org": {
+                "id": 205, "notice": "{copy} 2004-07 [http://www.peaklist.org/ultras.html peaklist.org]"
+            }
+        }
+    },
+    "credits": ["peaklist-org"],
+    "revision": 5
+}]
