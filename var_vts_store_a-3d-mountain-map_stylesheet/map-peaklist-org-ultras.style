@@ -1,0 +1,39 @@
+{
+    "constants": {
+        "@main-font": ["noto-mix","noto-cjk"],
+        "@serif-font": ["noto-serif","noto-mix","noto-cjk"],
+        "@italic-font": ["noto-italic","noto-mix","noto-cjk"],
+        "@bold-font": ["noto-bold","noto-mix","noto-cjk"],
+        "@name-solver": {"uppercase":{"if":[["has","$name"],"$name","$Name"]}},
+        "@feet": {"round":{"mul":[3.2808399,{"str2num":"$Elevation"}]}}
+    },
+    "fonts": {
+        "noto-bold": "//cdn.melown.com/vts/melown2015/fonts/noto-bold/1.0.0/noto-b.fnt",
+        "noto-italic": "//cdn.melown.com/vts/melown2015/fonts/noto-italic/1.0.0/noto-i.fnt",
+        "noto-mix": "//cdn.melown.com/vts/melown2015/fonts/noto-extended/1.0.0/noto.fnt",
+        "noto-cjk": "//cdn.melown.com/vts/melown2015/fonts/noto-cjk/1.0.0/noto.fnt",
+        "noto-serif": "//cdn.melown.com/vts/melown2015/fonts/noto-serif/1.0.0/noto-serif.fnt"
+    },
+    "layers": {
+    	"peak-labels": {
+            "&peak-prominence": {"add":[{"mul":[0.0001,{"str2num":"$Elevation"}]},{"str2num":"$Prom"}]},
+            "&imp": {"logScale":["&peak-prominence",8848.8848]},
+            "&peak-name-aux": {"if":[["==","&rank",0],{"uppercase":"{@name-solver}"},"{@name-solver}"]},
+            "&ele-solver": {"if":[["==","#metric",true],"{{'round':{'str2num':'$Elevation'}}} m","{@feet} ft"]},
+            "&peak-name": "{&peak-name-aux}\n({&ele-solver})",
+            "importance-source": "&imp",
+            "importance-weight": 1,
+            "label": true,
+            "label-source": "&peak-name",
+            "label-size": 20,
+            "label-color": [255,255,255,255],
+      	    "label-color2": [0,0,0,255],
+            "label-outline": [0.3,0.6,2.2,5],
+            "label-stick": [70,0,2,255,255,255,255],
+            "label-font": "@serif-font",
+            "zbuffer-offset": [-1,0,0],
+            "culling": 135,
+            "hysteresis": [1500,1500,"&peak-name",true]
+        }
+    }
+}
