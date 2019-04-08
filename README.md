@@ -140,4 +140,4 @@ and enjoy the beauty of Earth's landforms.
 
 [1]: https://ondra-prochazka.github.io/a-3d-mountain-map-of-the-earth
 [2]: https://vtsdocs.melown.com/
-[3]: ../blob/master/media/credits.png
+[3]: ../master/media/credits.png
