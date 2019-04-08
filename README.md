@@ -130,8 +130,10 @@ and modify it as follows:
 That is it! Point your browser to http://<your-server>:8070/store/a-3d-mountain-map/map
 and enjoy the beauty of Earth's landforms. 
 
+![a-3d-mountain-map-initial-view][4]
 
-# Legal notice
+
+## Legal notice
 
 Please respect any license restrictions applicable to the data sources used
 in this demonstration. Respective copyright holders are clearly marked in the
@@ -143,5 +145,5 @@ bottom-right area of the map window:
 [1]: https://ondra-prochazka.github.io/a-3d-mountain-map-of-the-earth
 [2]: https://vtsdocs.melown.com/
 [3]: ../master/media/credits.png
-
+[4]: ../master/media/a-3d-mountain-map.jpg
 
