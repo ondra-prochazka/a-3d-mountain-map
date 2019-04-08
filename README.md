@@ -18,7 +18,7 @@ instructions below, or fork the repository and do the same.
 
 Please respect any license restrictions applicable to the data sources used
 in this demonstration. Respective copyright holders are clearly marked in the
-credits section of the map window.
+bottom-right area of the map window:
 
 ![Credits section in vts-browser-js][3]
 
