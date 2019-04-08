@@ -20,8 +20,7 @@ Please respect any license restrictions applicable to the data sources used
 in this demonstration. Respective copyright holders are clearly marked in the
 bottom-right area of the map window:
 
-![Credits section in vts-browser-js][3]
-
+<div style="text-align: right">![Credits section in vts-browser-js][3]</div>
 
 ## Using This Repository to Run Your Own 3D Mountain Map
 
