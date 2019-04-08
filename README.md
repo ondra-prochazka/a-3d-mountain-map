@@ -20,16 +20,30 @@ Please respect any license restrictions applicable to the data sources used
 in this demonstration. Respective copyright holders are clearly marked in the
 credits section of the map window.
 
+![Credits section in vts-browser-js][3]
+
 
 ## Using This Repository to Run Your Own 3D Mountain Map
 
 ### Prerequisites 
 
 You will need a functioning [vts-geospatial][2] backend. The easiest way to do this is to
-use Melowntech's public repositories for recent Ubuntu LTS releases (16.04
-or 18.04).
+use Melowntech's public repositories for Ubuntu 18.04 LTS.
 
-TODO
+First, set up the repository on your system:
+
+```
+    $ sudo apt install apt-transport-https
+    $ cd /etc/apt/sources.list.d/ && sudo wget http://cdn.melown.com/packages/conf/melown-bionic.list
+    $ wget -O - http://cdn.melown.com/packages/keys/oss.packages%40melown.com.key | sudo apt-key add -
+```
+
+And install VTS backend:
+
+```
+    $ sudo apt-get update
+    $ sudo apt-get install vts-backend
+```
 
 The remainder of this tutorial presumes that you have set up your Vtsgeo
 backend in this way - if you choose another way, such as manually installing
@@ -41,7 +55,6 @@ Perform any of the bellow steps as the vts system user:
 ```
     # sudo -iu vts
 ```
-
 
 ### Cloning the repository 
 
@@ -124,5 +137,6 @@ That is it! Point your browser to http://<your-server>:8070/store/a-3d-mountain-
 and enjoy the beauty of Earth's landforms. 
 
 
-[1]: https://github.ondra-prochazka.io/a-3d-mountain-map-of-the-earth
+[1]: https://ondra-prochazka.github.io/a-3d-mountain-map-of-the-earth
 [2]: https://vtsdocs.melown.com/
+[3]: ../blob/master/media/credits.png
