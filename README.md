@@ -16,12 +16,6 @@ You are invited to clone this repository and use it as a base for your own 3D
 mapping projects. To recreate the original mountain map, simply follow the
 instructions below, or fork the repository and do the same.
 
-Please respect any license restrictions applicable to the data sources used
-in this demonstration. Respective copyright holders are clearly marked in the
-bottom-right area of the map window:
-
-![Credits section in vts-browser-js][3]
-
 ## Using This Repository to Run Your Own 3D Mountain Map
 
 ### Prerequisites 
@@ -137,6 +131,17 @@ That is it! Point your browser to http://<your-server>:8070/store/a-3d-mountain-
 and enjoy the beauty of Earth's landforms. 
 
 
+# Legal notice
+
+Please respect any license restrictions applicable to the data sources used
+in this demonstration. Respective copyright holders are clearly marked in the
+bottom-right area of the map window:
+
+![Credits section in vts-browser-js][3]
+
+
 [1]: https://ondra-prochazka.github.io/a-3d-mountain-map-of-the-earth
 [2]: https://vtsdocs.melown.com/
 [3]: ../master/media/credits.png
+
+
