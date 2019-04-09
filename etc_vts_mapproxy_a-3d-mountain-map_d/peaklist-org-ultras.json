@@ -7,21 +7,13 @@
     "definition": {
         "dataset": "world1500.json",
         "displaySize": 2048,
-        "mode": "never",
+        "mode": "auto",
         "styleUrl": "file:peaklist-org-ultras.style",
-        "introspection": {
-            "surface": { "group": "topoearth", "id": "viewfinder6" }
-        },
         "format": "geodataJson",
         "formatConfig": { "resolution": 524288 },
-        "demDataset": "topoearth/topoearth-viewfinder6"
+        "demDataset": "a-3d-mountain-map/wgs84"
     },
-    "referenceFrames": {
-        "melown2015": {
-            "lodRange": [1,1],
-            "tileRange": [[0,0], [1,1]]
-        }
-    },
+    "referenceFrames": ["melown2015"],
     "registry": {
         "credits": {
             "peaklist-org": {

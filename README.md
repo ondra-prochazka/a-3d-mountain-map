@@ -67,6 +67,7 @@ configuration files:
     $ ln -s $PWD/var_vts_store_a-3d-mountain-map_stylesheet ~/store/a-3d-mountain-map/stylesheet
     $ ln -s $PWD/var_vts_store_a-3d-mountain-map_map-config ~/store/a-3d-mountain-map/map-config
     $ ln -s $PWD/etc_vts_mapproxy_a-3d-mountain-map_d /etc/vts/mapproxy/a-3d-mountain-map.d
+    $ ln -s $PWD/var_vts_mapproxy_datasets_a-3d-mountain-map /var/vts/mapproxy/datasets/a-3d-mountain-map
 ```
 
 ### Setting up tileset storage
@@ -107,7 +108,7 @@ Make vts-mapproxy aware of the project's resources. Add the following line to
 and make the server take notice (as root):
 
 ```
-    $ sudo /etc/init.d/vts-backend-mapproxy force-update    
+    $ /etc/init.d/vts-backend-mapproxy force-update    
 ```
 
 Finally, make a subtle change to vts-vtsd config file, to make it handle the project's stylesheets properly.

@@ -18,7 +18,7 @@
     	"peak-labels": {
             "&peak-prominence": {"add":[{"mul":[0.0001,{"str2num":"$Elevation"}]},{"str2num":"$Prom"}]},
             "&imp": {"logScale":["&peak-prominence",8848.8848]},
-            "&peak-name-aux": {"if":[["==","&rank",0],{"uppercase":"{@name-solver}"},"{@name-solver}"]},
+            "&peak-name-aux": {"uppercase":{"uppercase":"{@name-solver}"}},
             "&ele-solver": {"if":[["==","#metric",true],"{{'round':{'str2num':'$Elevation'}}} m","{@feet} ft"]},
             "&peak-name": "{&peak-name-aux}\n({&ele-solver})",
             "importance-source": "&imp",

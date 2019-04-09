@@ -88,7 +88,6 @@
       "&imp": {"logScale":["&peak-prominence",8848.8848]},
       "&rank": {"discrete2":["&imp",[[0.0,6],[41.84,5],[49.97,4],[57.6,3],[65.22,2],[72.85,1],[80.48,0]]]},
       "&peak-name-aux": {"if":[["==","&rank",0],{"uppercase":"{@name-solver}"},"{@name-solver}"]},
-      "&ele-solver": "{{'round': {'str2num':'$ele'}}} m",
       "&feet": {"round":{"mul":[3.2808399,{"str2num":"$ele"}]}},
       "&ele-solver": {"if":[["==","#metric",true],"{{'round':{'str2num':'$ele'}}} m","{&feet} ft"]},
       "&peak-name": {"if":[["has","$ele"],"{&peak-name-aux}\n({&ele-solver})","{&peak-name-aux}"]},
