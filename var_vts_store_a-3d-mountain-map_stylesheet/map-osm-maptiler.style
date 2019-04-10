@@ -65,7 +65,7 @@
     },
     "places": {
       "filter": ["all",["==","#group","place"],["in","$class","city","town","village","suburb","hamlet"]],
-      "&imp": {"logScale":["@town-population",24183000]},
+      "&imp": {"logScale":["@town-population",24183000,10,90]},
       "&rank": {"discrete2":["&imp",[[0.0,6],[33.93,5],[43.4,4],[52.87,3],[62.33,2],[71.8,1],[81.26,0]]]},
       "importance-source": "&imp",
       "importance-weight": 1.05,
