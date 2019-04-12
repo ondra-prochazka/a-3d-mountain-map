@@ -1,0 +1,19 @@
+{
+    "storage": "/var/vts/store/stage.melown2015",
+    "tilesets": [
+        "terrain-viewfinder3"
+    ],
+    "boundLayers": {
+        "eox-it-sentinel2-cloudless": "//cdn.melown.com/vts/melown2015/imagery/global/eox-it-sentinel2-cloudless/boundlayer.json"
+    },
+    "view": {
+        "surfaces": { 
+            "terrain-viewfinder3": ["eox-it-sentinel2-cloudless"] 
+        },
+	"options": { 
+	    "superelevation" : [[0,4000],[1.5,1.3]]
+	}
+    },
+    "position": ["obj",-101.3,47.116,"float",0,0,-90,0,9800000,45.000000],
+    "version": 1
+}

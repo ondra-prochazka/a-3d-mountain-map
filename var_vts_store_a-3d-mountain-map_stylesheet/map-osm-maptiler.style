@@ -44,31 +44,12 @@
       "line-color": [255,255,255,64],
       "zbuffer-offset": [-0.01,0,0]
     },
-    "country-labels": {
-      "visible": false,
-      "filter": ["all",["==","#group","place"],["==","$class","country"]],
-      "importance-source": {"logScale":["@country-area",24183000]},
-      "importance-weight": 1,
-      "label": true,
-      "label-font": "@main-font",
-      "label-source": "@country-label",
-      "label-color": "@base-color",
-      "label-color2": "@base-color2",
-      "label-stick": "@base-stick",
-      "label-size": 14,
-      "label-spacing": 1,
-      "label-line-height": 0.8,
-      "label-offset": [0,-8],
-      "label-no-overlap": true,
-      "zbuffer-offset": [-0.15,0,0],
-      "hysteresis": [1500,1500,"@id-solver-town",true]
-    },
     "places": {
       "filter": ["all",["==","#group","place"],["in","$class","city","town","village","suburb","hamlet"]],
       "&imp": {"logScale":["@town-population",24183000,10,90]},
       "&rank": {"discrete2":["&imp",[[0.0,6],[33.93,5],[43.4,4],[52.87,3],[62.33,2],[71.8,1],[81.26,0]]]},
       "importance-source": "&imp",
-      "importance-weight": 1.05,
+      "importance-weight": 1.0,
       "label": true,
       "label-font": "@italic-font",
       "label-source": "@city-label",
@@ -80,7 +61,7 @@
       "label-no-overlap": true,
       "zbuffer-offset": [-0.35,0,0],
       "hysteresis": [1500,1500,"@id-solver-town",true],
-      "culling": 85
+      "culling": 89
     },
     "peaks": {
       "filter": ["all",["==","#group","mountain_peak"],["has","$name"],["!=","$name",""]],
@@ -94,9 +75,8 @@
       "importance-source": "&imp",
       "importance-weight": 1,
       "label": true,
-      "label-color":
-      {"linear2":["&rank",[[1,[255,255,255,255]],[6,[255,255,255,128]]]]},
-      "label-color2": [0,0,0,255],
+      "label-color": {"linear2":["&rank",[[1,[255,255,255,255]],[6,[255,255,255,160]]]]},
+      "label-color2": {"linear2":["&rank",[[1,[0,0,0,255]],[6,[0,0,0,160]]]]},
       "label-outline": [0.3,0.6,2.2,5],
       "label-stick": {"linear2":["&rank",[[1,[70,0,2,255,255,255,255]],[6,[70,0,2,255,255,255,128]]]]},
       "label-size": {"linear2":["&rank",[[0,20],[6,14]]]},

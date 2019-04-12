@@ -1,0 +1,40 @@
+{
+    "constants": {
+        "@osmid": {"if":[["has","$osm_id"],"$osm_id",""]},
+        "@name": {"if":[["has","$name"],{"if":[["any",["!has","$name:en"],["==",{"has-latin":"$name"},true]],"{$name}","{$name}\n{$name:en}"]},""]}
+    },
+    "layers": {
+        "places": {
+            "filter": ["all",["==","#group","place"],["in","$class","city","town","village","suburb","hamlet"]],
+            "&population": {"str2num":{"if":[["has","$population"],"$population",1]}},
+            "&importance": {"logScale":["&population",24183000, 10,90]},
+            "importance-source": "&importance",
+            "label": true,
+            "label-source": "@name",
+            "label-size": 16,
+            "zbuffer-offset": [-0.35,0,0],
+            "culling": 89,
+            "&id": "{@osmid} {@name}",
+            "hysteresis": [1500,1500,"&id",true]
+         },
+         "peaks": {
+             "filter": ["all",["==","#group","mountain_peak"],["has","$name"],["!=","$name",""]],
+             "&prominence": {"add":[
+                 {"if":[["has","$ele"],{"mul":[0.0001,{"str2num":"$ele"}]},0]},
+                 {"if":[["has","$prominence"],{"mul":[0.3048,{"str2num":"$prominence"}]},0]}]},
+             "&importance": {"logScale":["&prominence",8848.8848]},
+             "importance-source": "&importance",
+             "&feet": {"round":{"mul":[3.2808399,{"str2num":"$ele"}]}},
+             "&elevation-name": {"if":[["==","#metric",true],"{{'round':{'str2num':'$ele'}}} m","{&feet} ft"]},
+             "&peak-name": {"if":[["has","$ele"],"{@name}\n({&elevation-name})","{@name}"]},
+             "label": true,
+             "label-stick": [70,0,2,255,255,255,255],
+             "label-size": 16,
+             "label-source": "&peak-name",
+             "zbuffer-offset": [-0.45,0,0],
+             "culling": 100,
+             "&id": "{@osmid} {&peak-name}",
+             "hysteresis": [1500,1500,"&id",true]
+         }
+    }
+}

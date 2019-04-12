@@ -24,9 +24,9 @@ mix(vec3(1.0),mix(mix(vec3(0.0),c.rgb,flatShadeData.rgb),c.rgb,0.3),0.90);"
                 },
 		"freeLayers": {
 			"osm-maptiler": { 
-			    "style": "/store/a-3d-mountain-map/stylesheet/map-osm-maptiler.style?2" },
+			    "style": "/store/a-3d-mountain-map/stylesheet/map-osm-maptiler.style?5" },
 			"peaklist-org-ultras": { 
-			    "style": "/store/a-3d-mountain-map/stylesheet/map-peaklist-org-ultras.style?3" }
+			    "style": "/store/a-3d-mountain-map/stylesheet/map-peaklist-org-ultras.style?5" }
 		},
 		"options" : 
 		{

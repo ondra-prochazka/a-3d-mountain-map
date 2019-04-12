@@ -1,0 +1,24 @@
+{
+    "constants": {
+        "@name": {"uppercase":{"if":[["has","$name"],"$name","$Name"]}},
+        "@feet": {"round":{"mul":[3.2808399,{"str2num":"$Elevation"}]}}
+    },
+    "layers": {
+    	"peak-labels": {
+            "&peak-prominence": {"add":[{"mul":[0.0001,{"str2num":"$Elevation"}]},{"str2num":"$Prom"}]},
+            "&importance": {"logScale":["&peak-prominence",8848.8848]},
+            "importance-source": "&importance",
+            "importance-weight": 1.02,
+            "&peak-name-aux": {"trim":"{@name}"},
+            "&elevation-name": {"if":[["==","#metric",true],"{{'round':{'str2num':'$Elevation'}}} m","{@feet} ft"]},
+            "&peak-name": "{&peak-name-aux}\n({&elevation-name})",
+            "label": true,
+            "label-source": "&peak-name",
+            "label-size": 18,
+            "label-stick": [70,0,2,255,255,255,255],
+            "zbuffer-offset": [-1,0,0],
+            "culling": 135,
+            "hysteresis": [1500,1500,"&peak-name",true]
+        }
+    }
+}

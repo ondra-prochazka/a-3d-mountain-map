@@ -4,7 +4,7 @@
         "@serif-font": ["noto-serif","noto-mix","noto-cjk"],
         "@italic-font": ["noto-italic","noto-mix","noto-cjk"],
         "@bold-font": ["noto-bold","noto-mix","noto-cjk"],
-        "@name-solver": {"uppercase":{"if":[["has","$name"],"$name","$Name"]}},
+        "@name-solver": {"if":[["has","$name"],"$name","$Name"]},
         "@feet": {"round":{"mul":[3.2808399,{"str2num":"$Elevation"}]}}
     },
     "fonts": {
@@ -18,11 +18,11 @@
     	"peak-labels": {
             "&peak-prominence": {"add":[{"mul":[0.0001,{"str2num":"$Elevation"}]},{"str2num":"$Prom"}]},
             "&imp": {"logScale":["&peak-prominence",8848.8848]},
-            "&peak-name-aux": {"uppercase":{"uppercase":"{@name-solver}"}},
+            "&peak-name-aux": {"trim":{"uppercase":"{@name-solver}"}},
             "&ele-solver": {"if":[["==","#metric",true],"{{'round':{'str2num':'$Elevation'}}} m","{@feet} ft"]},
             "&peak-name": "{&peak-name-aux}\n({&ele-solver})",
             "importance-source": "&imp",
-            "importance-weight": 1,
+            "importance-weight": 1.02,
             "label": true,
             "label-source": "&peak-name",
             "label-size": 20,
