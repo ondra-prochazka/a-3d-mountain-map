@@ -128,7 +128,7 @@ and modify it as follows:
     [location<stylesheet>]
 ```
 
-That is it! Point your browser to http://<your-server>:8070/store/a-3d-mountain-map/map
+That is it! Point your browser to http://&lt;your-server&gt;:8070/store/a-3d-mountain-map/map
 and enjoy the beauty of Earth's landforms. 
 
 ![a-3d-mountain-map-initial-view][4]
