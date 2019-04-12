@@ -1,0 +1,42 @@
+{
+	"storage": "/var/vts/store/stage.melown2015",
+	"tilesets": [
+		"terrain-viewfinder3"
+	],
+	"credits": {},
+	"boundLayers": {
+		"eox-it-sentinel2-cloudless": "//cdn.melown.com/vts/melown2015/imagery/global/eox-it-sentinel2-cloudless/boundlayer.json"
+	},
+	"freeLayers": {
+		"osm-maptiler": "//cdn.melown.com/vts/melown2015/features/global/osm-maptiler/freelayer.json",
+		"peaklist-org-ultras": "/mapproxy/melown2015/geodata/a-3d-mountain-map/peaklist-org-ultras/freelayer.json"
+	},
+	"view": {
+		"surfaces": { 
+                    "terrain-viewfinder3": [ {
+		        "id": "eox-it-sentinel2-cloudless",
+                        "options": {
+		    	    "shaderVarFlatShade" : true,
+                    	    "shaderFilter" : "c.rgb = mix(vec3(1.0),mix(mix(vec3(0.0),c.rgb,flatShadeData.rgb),c.rgb,0.3),0.90);"
+                       }
+		     } ] 
+                },
+		"freeLayers": {
+			"osm-maptiler": { 
+			    "style": "/store/a-3d-mountain-map/stylesheet/map-osm-maptiler.style.orig" },
+			"peaklist-org-ultras": { 
+			    "style": "/store/a-3d-mountain-map/stylesheet/map-peaklist-org-ultras.style.orig" }
+		},
+		"options" : 
+		{
+			"superelevation" : [[0,4000],[1.5,1.3]]
+		}
+	},
+	"position": ["obj",-101.3,47.116,"float",0,0,-90,0,9800000,45.000000],
+        "browserOptions": {
+	    "controlMeasure": true,
+            "mapFeaturesReduceParams": [0.05,0.17,11,1,1000],
+            "mapFeaturesReduceMode": "scr-count7"
+        },
+	"version": 1
+}

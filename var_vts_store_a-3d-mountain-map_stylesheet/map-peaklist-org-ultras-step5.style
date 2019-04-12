@@ -1,0 +1,34 @@
+{
+    "constants": {
+        "@serif-font": ["noto-serif","noto-mix","noto-cjk"],
+        "@name": {"uppercase":{"if":[["has","$name"],"$name","$Name"]}},
+        "@feet": {"round":{"mul":[3.2808399,{"str2num":"$Elevation"}]}}
+    },
+    "fonts": {
+        "noto-mix": "//cdn.melown.com/vts/melown2015/fonts/noto-extended/1.0.0/noto.fnt",
+        "noto-cjk": "//cdn.melown.com/vts/melown2015/fonts/noto-cjk/1.0.0/noto.fnt",
+        "noto-serif": "//cdn.melown.com/vts/melown2015/fonts/noto-serif/1.0.0/noto-serif.fnt"
+    },
+    "layers": {
+    	"peak-labels": {
+            "&peak-prominence": {"add":[{"mul":[0.0001,{"str2num":"$Elevation"}]},{"str2num":"$Prom"}]},
+            "&importance": {"logScale":["&peak-prominence",8848.8848]},
+            "importance-source": "&importance",
+            "importance-weight": 1.02,
+            "&peak-name-aux": {"trim":"{@name}"},
+            "&elevation-name": {"if":[["==","#metric",true],"{{'round':{'str2num':'$Elevation'}}} m","{@feet} ft"]},
+            "&peak-name": "{&peak-name-aux}\n({&elevation-name})",
+            "label": true,
+            "label-source": "&peak-name",
+            "label-size": 20,
+            "label-font": "@serif-font",
+            "label-stick": [70,0,2,255,255,255,255],
+            "label-color": [255,255,255,255],
+            "label-color2": [0,0,0,255],
+            "label-outline": [0.3,0.6,2.2,5],
+            "zbuffer-offset": [-1,0,0],
+            "culling": 135,
+            "hysteresis": [1500,1500,"&peak-name",true]
+        }
+    }
+}
