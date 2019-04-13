@@ -22,7 +22,7 @@
             "peaklist-org-ultras": { 
                 "style": "/store/a-3d-mountain-map/stylesheet/map-peaklist-org-ultras-step5.style?1" },
             "osm-maptiler": { 
-                "style": "/store/a-3d-mountain-map/stylesheet/map-osm-maptiler-step5.style?4" }
+                "style": "/store/a-3d-mountain-map/stylesheet/map-osm-maptiler-step5.style?5" }
         },
 	"options": { 
 	    "superelevation" : [[0,4000],[1.5,1.3]]
