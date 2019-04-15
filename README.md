@@ -5,8 +5,8 @@ live GitHub pages for my [3D global mountain map][1] website.
 
 The website is intended as a simple demonstration of how a global
 interactive 3D map of Earth mountains, adhering to the time-proven rules of
-cartographic design may be built using strictly based on open-source
-technology and freely available data.
+cartographic design may be built with open-source technology and freely
+available data.
 
 The website has been created to accompany my talk "Visual Hierarchies in 3D
 cartography With VTS", first held at FOSS4G-NA 2019 in San Diego in April
