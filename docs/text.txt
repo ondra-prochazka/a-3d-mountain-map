@@ -5,40 +5,41 @@ interactive 3D map of Earth mountains, adhering to the time-proven rules of
 cartographic design, may be built with open-source technology and freely
 available data.
 
-(Simply browse the mountain map)[1] with a WebGL-enabled browser, or check-out
-some of the locations below:
+(Simply browse the mountain map)[1] with a WebGL-enabled browser. As a
+possible starting point, here is a tour of some interesting locations:
 
-(San Diego County bird's eye view, looking north-west)[3]
+(San Diego County, California, bird's eye view, looking north-west)[3]
 
 (San Jacinton Peak, Penninsular Ranges, southern Califronia, looking south-east)[14]
 
-(Ngorongoro Highlands, Tanzania, looking west)[4]
+(Mount Whitney, Central California, birds eye view from north-east)[11] 
+
+(The North Cascades (Washington State))[9]
+
+(Isanotski and Shishaldin volcanoes, Aleutian Islands, Alaska)[13]
+
+(The viewing platform at Crotched Mountain, New Hampshire)[10]
+
+(Summit view from Mont Blanc, looking east (France/Italy/Switzerland))[15]
+
+(Matterhorn (Switzerland))[7]
 
 (The Wetterstein mountain range (Germany/Austria))[5]
 
 (Loferer und Leoganger Steinberge (Austria))[6]
 
-(Matterhorn (Switzerland))[7]
-
-(Summit view from Mont Blanc, looking east (France/Italy/Switzerland))[15]
-
 (The Alps from the North)[8]
 
-(The North Cascades (Washington State))[9]
-
-(The viewing platform at Crotched Mountain, New Hampshire)[10]
-
-(Mount Whitney, Central California, birds eye view from north-east)[11] 
+(Krkonoše Mountain Range from the south, Czech Republic/Poland)[18]
 
 (Mount Narodnaya, Nether-polar Ural mountains, Russia)[12]
 
-(Isanotski and Shishaldin volcanoes, Aleutian Islands, Alaska)[13]
-
 (Nanga Parbat, Gilgit Baltistan, Pakistan)[16]
+
+(Ngorongoro Highlands, Tanzania, looking west)[4]
 
 (Table Mountain National Park, South Africa)[17]
 
-(Krkonoše Mountin Range from the south, Czech Republic/Poland)[18]
 
 # How Was the Map Created?
 
@@ -65,35 +66,43 @@ state of the map at the indiviual steps.
 
 ## Step 1 - The Basemap
 
-**Code**: new storage view definition
+**Code**: 
+(new storage view definition)[28]
 
 (State of the map after this step)[23]. 
     
 ## Step 2 - The Ultra-prominent Peaks
 
-**Code**: new geodata free layer in vts-mapproxy, free layer stylesheet,
-updated storage view with the new free layer, 
+**Code**: 
+(new geodata free layer in vts-mapproxy)[29], 
+(free layer stylesheet)[30],
+(updated storage view with the new free layer)[31], 
 
 (State of the map after this step)[24].
 
 ## Step 3 - Mountains and Settlements from OSM
 
-**Code**: new free layer stylesheet, updated storage view with the new free
-layer.
+**Code**: 
+(new free layer stylesheet)[32] 
+(updated storage view with the new free layer)[33]
 
 (State of the map after this step)[25].
 
 ## Step 4 - The Intellectual Hierarchy
 
-** Code **: updated osm free layer stylesheet, updated
-ultra-prominent peak stylesheet
+** Code **: 
+(updated storage view)[34]
+(updated osm free layer stylesheet)[35]
+(updated ultra-prominent peak stylesheet)[36]
 
 (State of the map after this step)[26].
 
 ## Step 5 - The Visual Hierarchy
 
-** Code **: updated storage view, updated osm free layer stylesheet, updated
-ultra-prominent peak stylesheet
+** Code **: 
+(updated storage view)[37]
+(updated osm free layer stylesheet)[38]
+(updated ultra-prominent peak stylesheet)[39]
 
 (State of the map after this step)[27].
 
@@ -152,3 +161,15 @@ Procházka
 [25]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map-step3/?pos=obj,-121.965107,47.040840,fix,761.16,-24.23,-7.90,0.00,33793.24,45.00
 [26]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map-step4/?pos=obj,-121.965107,47.040840,fix,761.16,-24.23,-7.90,0.00,33793.24,45.00
 [27]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map-step5/?pos=obj,-121.965107,47.040840,fix,761.16,-24.23,-7.90,0.00,33793.24,45.00
+[28]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_map-config/map-step1
+[29]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/etc_vts_mapproxy_a-3d-mountain-map_d/peaklist-org-ultras.json
+[30]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-peaklist-org-ultras-step2.style
+[31]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_map-config/map-step2 
+[32]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-osm-maptiler-step3.style
+[33]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_map-config/map-step3
+[34]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_map-config/map-step4
+[35]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-osm-maptiler-step4.style
+[36]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-peaklist-org-ultras-step4.style
+[37]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_map-config/map-step5
+[38]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-osm-maptiler-step5.style
+[39]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-peaklist-org-ultras-step5.style
