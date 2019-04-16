@@ -1,61 +1,73 @@
-## A 3D Mountain Map of the Earth
+---
+layout: page
+title: "A 3D Mountain Map of the Earth"
+---
 
-This website is intended as a simple demonstration of how a global
+![Panorama of Lusatia](media/lusatia.jpg){:class="img-responsive"}
+
+This webpage is intended as a simple demonstration of how a global
 interactive 3D map of Earth mountains, adhering to the time-proven rules of
 cartographic design, may be built with open-source technology and freely
 available data.
 
-(Simply browse the mountain map)[1] with a WebGL-enabled browser. As a
+[Simply browse the mountain map][1]{:target="_blank"} with a WebGL-enabled browser. As a
 possible starting point, here is a tour of some interesting locations:
 
-(San Diego County, California, bird's eye view, looking north-west)[3]
+* [San Diego County, California, bird's eye view, looking north-west][3]{:target="_blank"}
 
-(San Jacinton Peak, Penninsular Ranges, southern Califronia, looking south-east)[14]
+* [San Jacinto Peak, Penninsular Ranges, southern Califronia, looking south-east][14]{:target="_blank"}
 
-(Mount Whitney, Central California, birds eye view from north-east)[11] 
+* [Mount Whitney, Central California, birds eye view from north-east][11]{:target="_blank"}
 
-(The North Cascades (Washington State))[9]
+* [The North Cascades (Washington State)][9]{:target="_blank"}
 
-(Isanotski and Shishaldin volcanoes, Aleutian Islands, Alaska)[13]
+* [Isanotski and Shishaldin volcanoes, Aleutian Islands, Alaska][13]{:target="_blank"}
 
-(The viewing platform at Crotched Mountain, New Hampshire)[10]
+* [The viewing platform at Crotched Mountain, New Hampshire][10]{:target="_blank"}
 
-(Summit view from Mont Blanc, looking east (France/Italy/Switzerland))[15]
+* [Summit view from Mont Blanc, looking east (France/Italy/Switzerland)][15]{:target="_blank"}
 
-(Matterhorn (Switzerland))[7]
+* [Matterhorn (Switzerland)][7]{:target="_blank"}
 
-(The Wetterstein mountain range (Germany/Austria))[5]
+* [The Wetterstein mountain range (Germany/Austria)][5]{:target="_blank"}
 
-(Loferer und Leoganger Steinberge (Austria))[6]
+* [Loferer und Leoganger Steinberge (Austria)][6]{:target="_blank"}
 
-(The Alps from the North)[8]
+* [The Alps from the North][8]{:target="_blank"}
 
-(Krkonoše Mountain Range from the south, Czech Republic/Poland)[18]
+* [Krkonoše Mountain Range from the south, Czech Republic/Poland][18]{:target="_blank"}
 
-(Mount Narodnaya, Nether-polar Ural mountains, Russia)[12]
+* [Mount Narodnaya, Nether-polar Ural mountains, Russia][12]{:target="_blank"}
 
-(Nanga Parbat, Gilgit Baltistan, Pakistan)[16]
+* [Nanga Parbat, Gilgit Baltistan, Pakistan][16]{:target="_blank"}
 
-(Ngorongoro Highlands, Tanzania, looking west)[4]
+* [Ngorongoro Highlands, Tanzania, looking west][4]{:target="_blank"}
 
-(Table Mountain National Park, South Africa)[17]
+* [Table Mountain National Park, South Africa][17]{:target="_blank"}
 
 
-# How Was the Map Created?
+[![A 3D Mountain Map of the Earth](https://github.com/ondra-prochazka/a-3d-mountain-map/raw/master/media/a-3d-mountain-map.jpg)](https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/)
 
-The map was built using (vts-geospatial)[19], an open-source 3D geospatial software
-stack designed and developed by (Melown Technologies SE)[20].
+<br/>
 
-The complete source code of this project (and of this website) is (available
-in an accompanying GitHub repository)[21], and you're welcome to play with it and use as
-inspiration for your own 3D map project. Simple instructions on how to
-recreate the map are available (in the repo's readme)[22].  
+## How Was the Map Created?
 
-# The FOSS4G 2019 talk
+The map was built using [vts-geospatial][19]{:target="_blank"}, an
+open-source 3D geospatial software stack designed and [developed by Melown
+Technologies SE][20]{:target="_blank"}.
+
+The complete source code of this project (and of this website) is [available
+in an accompanying GitHub repository][21]{:target="_blank"}, and you're
+welcome to play with it and use as inspiration for your own 3D map project. 
+Simple instructions on how to recreate the map are available [in the repo's
+readme][22]{:target="_blank"}.
+
+<br/>
+
+## The FOSS4G 2019 talk
 
 This website has been created to accompany my talk "Visual Hierarchies in 3D
-cartography With VTS", first held at FOSS4G-NA 2019 in San Diego in April
-2019. 
+cartography With VTS", first held at FOSS4G-NA 2019 in San Diego in April 2019. 
 
 In the talk, the map is created from scratch in a simple tutorial. Links to the
 configuration files and styles used in the tutorial are given below for a
@@ -64,73 +76,84 @@ clear reference.
 The view overlooking Mount Rainier to the north is used to demonstrate the
 state of the map at the indiviual steps.
 
-## Step 1 - The Basemap
+#### Step 1 - The Basemap
 
 **Code**: 
-(new storage view definition)[28]
 
-(State of the map after this step)[23]. 
+ * [new storage view definition][28]{:target="_blank"}
+
+[State of the map after this step][23]{:target="_blank"}. 
     
-## Step 2 - The Ultra-prominent Peaks
+#### Step 2 - The Ultra-prominent Peaks
 
 **Code**: 
-(new geodata free layer in vts-mapproxy)[29], 
-(free layer stylesheet)[30],
-(updated storage view with the new free layer)[31], 
 
-(State of the map after this step)[24].
+ * [new geodata free layer in vts-mapproxy][29]{:target="_blank"}
+ * [free layer stylesheet][30]{:target="_blank"}
+ * [updated storage view with the new free layer][31]{:target="_blank"}
 
-## Step 3 - Mountains and Settlements from OSM
+[State of the map after this step][24]{:target="_blank"}.
+
+#### Step 3 - Mountains and Settlements from OSM
 
 **Code**: 
-(new free layer stylesheet)[32] 
-(updated storage view with the new free layer)[33]
 
-(State of the map after this step)[25].
+ * [new free layer stylesheet][32]{:target="_blank"}
+ * [updated storage view with the new free layer][33]{:target="_blank"}
 
-## Step 4 - The Intellectual Hierarchy
+[State of the map after this step][25]{:target="_blank"}.
 
-** Code **: 
-(updated storage view)[34]
-(updated osm free layer stylesheet)[35]
-(updated ultra-prominent peak stylesheet)[36]
+#### Step 4 - The Intellectual Hierarchy
 
-(State of the map after this step)[26].
+**Code**: 
 
-## Step 5 - The Visual Hierarchy
+ * [updated storage view][34]{:target="_blank"}
+ * [updated osm free layer stylesheet][35]{:target="_blank"}
+ * [updated ultra-prominent peak stylesheet][36]{:target="_blank"}
 
-** Code **: 
-(updated storage view)[37]
-(updated osm free layer stylesheet)[38]
-(updated ultra-prominent peak stylesheet)[39]
+[State of the map after this step][26]{:target="_blank:}.
 
-(State of the map after this step)[27].
+#### Step 5 - The Visual Hierarchy
+
+**Code**: 
+
+ * [updated storage view][37]{:target="_blank"}
+ * [updated osm free layer stylesheet][38]{:target="_blank"}
+ * [updated ultra-prominent peak stylesheet][39]{:target="_blank"}
+
+[State of the map after this step][27]{:target="_blank"}.
+
+<br/>
+
+## Desktop Version of the Map
+
+![Kilimanjaro and Meru in vts-desktop-cpp](media/kilimanjaro.jpg){:class="img-responsive"}
 
 
-# The Map on your Desktop
+You might also want to consider taking a look at the mountain map in
+[vts-browser-cpp desktop][2]{:target="_blank"}.  Though the whitewash and
+vertical-exaggeration techniques used in the mountain map are not yet fully
+reflected in the current version of vts-browser-cpp, the realistic physical
+atmosphere and enhanced navigation capabilities provide for an almost
+Zen-like experience.
 
-You might want to consider taking a look at the mountain map in
-(vts-browser-cpp desktop)[2].  Though the whitewash and vertical-exaggeration
-techniques used in the mountain map are not yet fully reflected in the
-current version of vts-browser-cpp, the realistic physical atmosphere and
-enhanced navigation capabilities provide for an almost Zen-like experience.
+<br/>
 
-
-# Legal Notice
+## Legal Notice
 
 Not that though all of the sources used in this map are freely available,
 some license restricitons do apply.  Respective copyright holders are
 clearly marked in the bottom-right area of your map window:
 
-![Credits section in vts-browser-js][3]
+![Credits section in vts-browser-js][40]
 
 You are free to use the information contained herein or in the accompanying
 GitHub repo map as a basis for your own 3D-mapping projects.   
 
-Vts-geospatial is &copy; Melown Technologies SE, available under a
+VTS Geospatial is &copy; Melown Technologies SE 2015-19, available under a
 permissive open-source license. 
 
-This website and the accompanying source code repo is &copy 2019 Ondřej
+This website and the accompanying source code repo is &copy; 2019 Ondřej
 Procházka
 
 
@@ -173,3 +196,4 @@ Procházka
 [37]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_map-config/map-step5
 [38]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-osm-maptiler-step5.style
 [39]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-peaklist-org-ultras-step5.style
+[40]: https://github.com/ondra-prochazka/a-3d-mountain-map/raw/master/media/credits.png
