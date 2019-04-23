@@ -153,7 +153,7 @@ marked in the bottom-right area of your map window:
 You are free to use the information contained herein or in the accompanying
 GitHub repo map as a basis for your own 3D-mapping projects.   
 
-VTS Geospatial is &copy; Melown Technologies SE 2015-19 
+VTS Geospatial is &copy;2015-19 Melown Technologies SE. 
 
 
 [1]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map

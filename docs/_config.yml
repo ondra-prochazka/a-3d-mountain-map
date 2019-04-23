@@ -1,9 +1,7 @@
 title: A 3D Mountain Map of the Earth
-author: Ondřej Procházka, Melown Technologies SE
+author: Ondřej Procházka
 description: > # this means to ignore newlines until "show_exerpts:"
-  A three-dimensional, interactive map of the mountains of the Earth,
-  created using open-source software and freely available data.
-  Source code available on GitHub.
+  A three-dimensional, interactive map of the mountains of the Earth.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
