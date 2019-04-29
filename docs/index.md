@@ -171,9 +171,9 @@ VTS Geospatial is &copy;2015-19 Melown Technologies SE.
 [13]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/?pos=obj,-163.780048,54.779658,fix,543.82,-113.39,-22.98,0.00,28491.67,55.00
 [14]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/?pos=obj,-116.685494,33.814871,fix,3032.20,-143.62,-22.57,0.00,28164.69,45.00
 [15]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/?pos=obj,6.864492,45.832796,fix,4932.53,57.99,-9.52,0.00,624.62,30.00
-[16]: https://rigel.mlwn.se/store/map-config/visual-hierarchies1/?pos=obj,74.611231,35.213436,fix,4823.86,-19.87,-8.59,0.00,17007.26,75.00
-[17]: https://rigel.mlwn.se/store/map-config/visual-hierarchies1/?pos=obj,18.363182,-34.018678,fix,221.15,25.33,-44.46,0.00,14549.58,75.00
-[18]: https://rigel.mlwn.se/store/map-config/visual-hierarchies1/?pos=obj,15.560333,50.620320,fix,590.24,14.44,-16.56,0.00,8637.47,75.00
+[16]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/?pos=obj,74.611231,35.213436,fix,4823.86,-19.87,-8.59,0.00,17007.26,75.00
+[17]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/?pos=obj,18.363182,-34.018678,fix,221.15,25.33,-44.46,0.00,14549.58,75.00
+[18]: https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/?pos=obj,15.560333,50.620320,fix,590.24,14.44,-16.56,0.00,8637.47,75.00
 [19]: https://vtsdocs.melown.com/
 [20]: https://www.melown.com/
 [21]: https://github.com/ondra-prochazka/a-3d-mountain-map
