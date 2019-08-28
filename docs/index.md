@@ -67,10 +67,12 @@ README][22]{:target="_blank"}.
 
 <br/>
 
-## The FOSS4G 2019 NA talk
+## The FOSS4G 2019 talk
 
-This website has been created to accompany my talk "Visual Hierarchies in 3D
-cartography With VTS", first held at FOSS4G-NA 2019 in San Diego in April 2019. 
+This website has been created to accompany my talk ["3D cartography (with
+vts-geospatial)"][41]{:target="_blank"}, held at FOSS4G in Bucharest in
+August 2019.  An earlier version of the talk was held at FOSS4G-NA in San
+Diego in April 2019.
 
 In the talk, the map is created from scratch in a simple tutorial. Links to the
 configuration files and styles used in the tutorial are given below for a
@@ -196,3 +198,4 @@ VTS Geospatial is &copy;2015-19 Melown Technologies SE.
 [38]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-osm-maptiler-step5.style
 [39]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-peaklist-org-ultras-step5.style
 [40]: https://github.com/ondra-prochazka/a-3d-mountain-map/raw/master/media/credits.png
+[41]: https://drive.google.com/open?id=1493pPjh6DAg6jdtYBKMpAvr3w7mVaFHp
