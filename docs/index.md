@@ -25,8 +25,6 @@ serve as your starting point:
 
 * [Isanotski and Shishaldin volcanoes (Aleutian Islands, Alaska)][13]{:target="_blank"}
 
-* [The viewing platform at Crotched Mountain (New Hampshire)][10]{:target="_blank"}
-
 * [Summit view from Mont Blanc (France/Italy/Switzerland), looking east][15]{:target="_blank"}
 
 * [Matterhorn (Switzerland)][7]{:target="_blank"}
@@ -67,12 +65,14 @@ README][22]{:target="_blank"}.
 
 <br/>
 
-## The FOSS4G 2019 talk
+## The FOSS4G and NACIS 2019 talks
 
-This website has been created to accompany my talk ["3D cartography (with
-vts-geospatial)"][41]{:target="_blank"}, held at FOSS4G in Bucharest in
-August 2019.  An earlier version of the talk was held at FOSS4G-NA in San
-Diego in April 2019.
+This website has been created to accompany my talk [3D Cartography (with
+vts-geospatial)][41]{:target="_blank"} held at FOSS4G in Bucharest in
+August 2019, and a largely similar talk [Visual Hierarchies in Interactive
+Web-based 3D Mapping][42]{:target="_blank"} held at NACIS meeting in Tacoma in
+October 2019.  An earlier version of the talk was held at FOSS4G-NA in San
+Diego in April of the same year.
 
 In the talk, the map is created from scratch in a simple tutorial. Links to the
 configuration files and styles used in the tutorial are given below for a
@@ -199,3 +199,4 @@ VTS Geospatial is &copy;2015-19 Melown Technologies SE.
 [39]: https://raw.githubusercontent.com/ondra-prochazka/a-3d-mountain-map/master/var_vts_store_a-3d-mountain-map_stylesheet/map-peaklist-org-ultras-step5.style
 [40]: https://github.com/ondra-prochazka/a-3d-mountain-map/raw/master/media/credits.png
 [41]: https://drive.google.com/open?id=1493pPjh6DAg6jdtYBKMpAvr3w7mVaFHp
+[42]: https://drive.google.com/open?id=1L6FRsVFXVWwv9UZ8Te2ioFaPginZovTv
