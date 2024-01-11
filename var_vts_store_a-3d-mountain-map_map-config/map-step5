@@ -1,16 +1,16 @@
 {
     "storage": "/var/vts/store/stage.melown2015",
-    "tilesets": ["terrain-viewfinder3"],
+    "tilesets": ["topoearth-viewfinder-dem3"],
     "boundLayers": {
-        "eox-it-sentinel2-cloudless": "//cdn.melown.com/vts/melown2015/imagery/global/eox-it-sentinel2-cloudless/boundlayer.json"
+        "eox-it-sentinel2-cloudless": "/mapproxy/melown2015/tms/topoearth/eoxit-sentinel2-cloudless-2018/boundlayer.json"
     },
     "freeLayers": {
         "peaklist-org-ultras": "/mapproxy/melown2015/geodata/a-3d-mountain-map/peaklist-org-ultras/freelayer.json",
-        "osm-maptiler": "//cdn.melown.com/vts/melown2015/features/global/osm-maptiler/freelayer.json"
+        "osm-maptiler": "/mapproxy/melown2015/geodata/topoearth/osm-maptiler/freelayer.json"
     },
     "view": {
         "surfaces": { 
-             "terrain-viewfinder3": [ {
+             "topoearth-viewfinder-dem3": [ {
                  "id": "eox-it-sentinel2-cloudless",
                   "options": {
                       "shaderVarFlatShade" : true,

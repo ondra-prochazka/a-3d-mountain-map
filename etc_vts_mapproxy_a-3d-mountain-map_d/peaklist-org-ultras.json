@@ -4,7 +4,7 @@
     "driver": "geodata-vector",
     "type": "geodata",
     "definition": {
-        "dataset": "world1500.json",
+        "dataset": "a-3d-mountain-map/world1500.json",
         "displaySize": 2048,
         "mode": "auto",
         "formatConfig": { "resolution": 524288 },

@@ -6,10 +6,10 @@
         "@italic-font": ["noto-italic","noto-mix","noto-cjk"]
     },
     "fonts": {
-        "noto-italic": "//cdn.melown.com/vts/melown2015/fonts/noto-italic/1.0.0/noto-i.fnt",
-        "noto-mix": "//cdn.melown.com/vts/melown2015/fonts/noto-extended/1.0.0/noto.fnt",
-        "noto-cjk": "//cdn.melown.com/vts/melown2015/fonts/noto-cjk/1.0.0/noto.fnt",
-        "noto-serif": "//cdn.melown.com/vts/melown2015/fonts/noto-serif/1.0.0/noto-serif.fnt"
+        "noto-italic": "//cdn.tspl.re/fonts/noto-italic/1.0.0/noto-i.fnt",
+        "noto-mix": "//cdn.tspl.re/fonts/noto-extended/1.0.0/noto.fnt",
+        "noto-cjk": "//cdn.tspl.re/fonts/noto-cjk/1.0.0/noto.fnt",
+        "noto-serif": "//cdn.tspl.re/fonts/noto-serif/1.0.0/noto-serif.fnt"
     },
     "layers": {
         "places": {

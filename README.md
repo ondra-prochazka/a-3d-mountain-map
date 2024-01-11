@@ -81,12 +81,6 @@ Add global Viewfinder Panoramas DEM to vtsd storage:
 
 ### Setting up the local resources
 
-Make the directory to hold the local resources:
-
-```
-    $ mkdir ~/mapproxy/datasets/a-3d-mountain-map
-```
-
 Download the peaklist.org's list of ultra-prominent peaks (also, read the
 terms of use for this dataset):
 
@@ -116,19 +110,17 @@ Open `/etc/vts/vtsd/vtsd.conf`, find this snippet:
 
 ```
     # Disable dataset handling for stylesheets
-    #[location</stylesheet>]
-    [location<stylesheet>]
+    [location</stylesheet>]
 ```
 
 and modify it as follows:
 
 ```
     # Disable dataset handling for stylesheets
-    #[location</stylesheet>]
     [location<stylesheet>]
 ```
 
-That is it! Point your browser to http://&lt;your-server&gt;:8070/store/a-3d-mountain-map/map
+That is it! Point your browser to http://&lt;your-server&gt;:8070/store/a-3d-mountain-map/map-config/map
 and enjoy the beauty of Earth's landforms. 
 
 ![a-3d-mountain-map-initial-view][4]

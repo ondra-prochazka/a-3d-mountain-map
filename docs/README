@@ -1,0 +1,5 @@
+Use
+
+$ bundle exec jekyll build
+
+to build the static site.

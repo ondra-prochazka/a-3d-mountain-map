@@ -5,9 +5,9 @@
         "@feet": {"round":{"mul":[3.2808399,{"str2num":"$Elevation"}]}}
     },
     "fonts": {
-        "noto-mix": "//cdn.melown.com/vts/melown2015/fonts/noto-extended/1.0.0/noto.fnt",
-        "noto-cjk": "//cdn.melown.com/vts/melown2015/fonts/noto-cjk/1.0.0/noto.fnt",
-        "noto-serif": "//cdn.melown.com/vts/melown2015/fonts/noto-serif/1.0.0/noto-serif.fnt"
+        "noto-mix": "//cdn.tspl.re/fonts/noto-extended/1.0.0/noto.fnt",
+        "noto-cjk": "//cdn.tspl.re/fonts/noto-cjk/1.0.0/noto.fnt",
+        "noto-serif": "//cdn.tspl.re/fonts/noto-serif/1.0.0/noto-serif.fnt"
     },
     "layers": {
     	"peak-labels": {
@@ -27,7 +27,7 @@
             "label-color2": [0,0,0,255],
             "label-outline": [0.3,0.6,2.2,5],
             "zbuffer-offset": [-1,0,0],
-            "culling": 135,
+            "culling": 95,
             "hysteresis": [1500,1500,"&peak-name",true]
         }
     }
