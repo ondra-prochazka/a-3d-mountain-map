@@ -46,7 +46,7 @@ serve as your starting point:
 * [Table Mountain National Park (South Africa)][17]{:target="_blank"}
 
 
-[![A 3D Mountain Map of the Earth](https://github.com/ondra-prochazka/a-3d-mountain-map/raw/master/media/a-3d-mountain-map.jpg)](https://rigel.mlwn.se/store/a-3d-mountain-map/map-config/map/)
+[![A 3D Mountain Map of the Earth](https://github.com/ondra-prochazka/a-3d-mountain-map/raw/master/media/a-3d-mountain-map.jpg)](https://cdn.tspl.re/store/a-3d-mountain-map/map-config/map/)
 
 <br/>
 

@@ -135,7 +135,7 @@ bottom-right area of the map window:
 ![Credits section in vts-browser-js][3]
 
 
-[1]: https://rigel.mlwn.se/mountain-map
+[1]: https://tspl.re/mountain-map
 [2]: https://vtsdocs.melown.com/
 [3]: ../master/media/credits.png
 [4]: ../master/media/a-3d-mountain-map.jpg
