@@ -1,6 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+gem "jekyll", "~> 4.3"
+# for GitHub-style Markdown tables/lists (optional but common)
+gem "kramdown-parser-gfm"
+# only needed for `jekyll serve` on Ruby 3.x (not for `build`)
+# gem "webrick", "~> 1.8"
 
-gem 'jekyll'
-gem 'minima'
-gem 'jekyll-target-blank'
-
+gem "minima", "~> 2.5"
