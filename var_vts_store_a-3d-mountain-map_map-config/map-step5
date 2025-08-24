@@ -6,7 +6,7 @@
     },
     "freeLayers": {
         "peaklist-org-ultras": "/mapproxy/melown2015/geodata/a-3d-mountain-map/peaklist-org-ultras/freelayer.json",
-        "osm-maptiler": "/mapproxy/melown2015/geodata/topoearth/osm-maptiler/freelayer.json"
+        "osm-openfreemap": "/mapproxy/melown2015/geodata/topoearth/osm-openfreemap/freelayer.json"
     },
     "view": {
         "surfaces": { 
@@ -21,8 +21,8 @@
         "freeLayers": {
             "peaklist-org-ultras": { 
                 "style": "/store/a-3d-mountain-map/stylesheet/map-peaklist-org-ultras-step5.style?1" },
-            "osm-maptiler": { 
-                "style": "/store/a-3d-mountain-map/stylesheet/map-osm-maptiler-step5.style?7" }
+            "osm-openfreemap": { 
+                "style": "/store/a-3d-mountain-map/stylesheet/map-osm-maptiler-step5.style?8" }
         },
 	"options": { 
 	    "superelevation" : [[0,4000],[1.5,1.3]]

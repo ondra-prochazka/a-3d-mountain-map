@@ -1,6 +1,6 @@
 {
     "constants": {
-        "@osmid": {"if":[["has","$osm_id"],"$osm_id",""]},
+        "@osmid": {"if":[["has","$id_"],"id_",""]},
         "@name": {"if":[["has","$name"],{"if":[["any",["!has","$name:en"],["==",{"has-latin":"$name"},true]],"{$name}","{$name}\n{$name:en}"]},""]},
         "@serif-font": ["noto-serif","noto-mix","noto-cjk"],
         "@italic-font": ["noto-italic","noto-mix","noto-cjk"]
